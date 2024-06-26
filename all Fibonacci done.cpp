@@ -27,3 +27,9 @@ void ukurWaktuEksekusi(){
         <<setw(20)<<"Hasil dynamic"
         <<setw(20)<<"Waktu dynamic (ms)"<<endl;
 
+    for (int n:nilai_n){
+        auto mulai=high_resolution_clock::now();
+        long long hasil_rekursif=fibonacciRekursif(n);
+        auto akhir=high_resolution_clock::now();
+        auto durasi_rekursif=duration_cast<milliseconds>(akhir-mulai).count();
+
