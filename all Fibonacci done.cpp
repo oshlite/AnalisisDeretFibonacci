@@ -19,3 +19,11 @@ long long fibonacciDynamic(int n){
     }return b;
 }
 
+void ukurWaktuEksekusi(){
+    int nilai_n[]={10,25,30,40,50};
+    cout<<left<<setw(5)<<"n"
+        <<setw(20)<<"Hasil Rekursif"
+        <<setw(25)<<"Waktu Rekursif (ms)"
+        <<setw(20)<<"Hasil dynamic"
+        <<setw(20)<<"Waktu dynamic (ms)"<<endl;
+
