@@ -33,3 +33,9 @@ void ukurWaktuEksekusi(){
         auto akhir=high_resolution_clock::now();
         auto durasi_rekursif=duration_cast<milliseconds>(akhir-mulai).count();
 
+        mulai=high_resolution_clock::now();
+        long long hasil_dynamic=fibonacciDynamic(n);
+        akhir=high_resolution_clock::now();
+        auto durasi_dynamic=duration_cast<milliseconds>(akhir-mulai).count();
+
+ 
