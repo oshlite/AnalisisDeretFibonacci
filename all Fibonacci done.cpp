@@ -38,4 +38,11 @@ void ukurWaktuEksekusi(){
         akhir=high_resolution_clock::now();
         auto durasi_dynamic=duration_cast<milliseconds>(akhir-mulai).count();
 
- 
+        cout<<left<<setw(5)<<n
+            <<setw(20)<<hasil_rekursif
+            <<setw(25)<<durasi_rekursif
+            <<setw(20)<<hasil_dynamic
+            <<setw(20)<<durasi_dynamic<<endl;
+    }
+}
+
