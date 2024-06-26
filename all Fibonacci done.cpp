@@ -4,20 +4,22 @@
 using namespace std;
 using namespace std::chrono;
 
-long long fibonacciRekursif(int n){
+long long fibonacciRekursif(int n) {
     if (n<=1)
         return n;
     return fibonacciRekursif(n-1)+fibonacciRekursif(n-2);
 }
 
-long long fibonacciDynamic(int n){
+long long fibonacciDynamic(int n) {
     if (n<=1)
         return n;
     long long a=0,b=1,c;
-    for (int i=2; i<=n; i++){
+    for (int i=2; i<=n; i++) {
         c=a+b; a=b; b=c;
-    }return b;
+    }
+    return b;
 }
+
 
 void ukurWaktuEksekusi(){
     int nilai_n[]={10,25,30,40,50};
