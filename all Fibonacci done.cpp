@@ -46,3 +46,7 @@ void ukurWaktuEksekusi(){
     }
 }
 
+int main(){
+    ukurWaktuEksekusi();
+    return 0;
+}
